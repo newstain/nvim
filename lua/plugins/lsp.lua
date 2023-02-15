@@ -28,7 +28,7 @@ return{ -- lsp 服务
             mason_lspconfig.setup({
                 -- 根据语言填写
                 ensure_installed = {
-                    "sumneko_lua",  -- lua
+                    "lua_ls",       -- lua
                     "clangd",       -- c and c++
                     "texlab",       -- latex, or install 'ltex'
                     "bashls",       -- bash
@@ -46,7 +46,7 @@ return{ -- lsp 服务
         config = function()
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-            require("lspconfig").sumneko_lua.setup({
+            require("lspconfig").lua_ls.setup({
                 capabilities = capabilities,
             })
 
