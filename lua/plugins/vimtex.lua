@@ -14,8 +14,8 @@ return{ -- vimtex, plugin to compile the "*.tex" file
 
             "----------------跳转设置----------------------------
             let g:vimtex_view_method='sioyek'
-            let g:vimtex_view_sioyek_exe='sioyek.exe'
-            let g:vimtex_callback_progpath='wsl nvim'
+            "let g:vimtex_view_sioyek_exe='sioyek.exe'
+            "let g:vimtex_callback_progpath='wsl nvim'
 
             let g:vimtex_view_general_options
             \ = '-reuse-instance -forward-search @tex @line @pdf'
